@@ -67,7 +67,7 @@ def caesar_cipher(message, shift):
     for char in message:
         if char == " ":
             shifted_message += char
-        elif ord("A") <= char <= ord("Z"):
+        elif "A" <= char <= "Z":
             shifted_number = (ord(char) - ord("A") + shift) % 26 + ord("A")
             shifted_char = chr(shifted_number)
             shifted_message += shifted_char
